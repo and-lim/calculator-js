@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator-JS</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet"> 
+
+	<!-- Script -->
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div class="title">
+		<h1>Calculator-JS</h1>
+	</div>
+		<div class="main">
+			<h2>Calculator</h2>
+			<form name="form">
+				<input class="textarea" name="textarea">
+			</form>
+				<div class="calculator">
+					<div style="margin-top: 10px;">
+						<input class="button" type="button" value="AC" onclick="clean()">
+						<input class="button" type="button" value="del" onclick="back()">
+						<input class="button btn-green" type="button" value="/" onclick="insert(' / ')">
+						<input class="button btn-green" type="button" value="x" onclick="insert(' * ')">
+					</div>
+					<div>
+						<input class="button" type="button" value="7" onclick="insert(7)">
+						<input class="button" type="button" value="8" onclick="insert(8)">
+						<input class="button" type="button" value="9" onclick="insert(9)">
+						<input class="button btn-green" type="button" value="-" onclick="insert(' - ')">
+					</div>
+					<div>
+						<input class="button" type="button" value="4" onclick="insert(4)">
+						<input class="button" type="button" value="5" onclick="insert(5)">
+						<input class="button" type="button" value="6" onclick="insert(6)">
+						<input class="button btn-green" type="button" value="+" onclick="insert(' + ')">
+					</div>
+					<div>
+						<input class="button" type="button" value="1" onclick="insert(1)">
+						<input class="button" type="button" value="2" onclick="insert(2)">
+						<input class="button" type="button" value="3" onclick="insert(3)">
+					</div>
+					<div style=" display: flex;">
+						<div>
+							<input class="button" type="button" value="0" onclick="insert(0)">
+							<input class="button" type="button" value="00" onclick="insert('00')">
+							<input class="button" type="button" value="." onclick="insert('.')">
+						</div>
+						<div>
+							<input style="height:106px; margin-top: -200px; margin-left: 10px;" class="button btn-green" type="button" value="=" onclick="equal()">
+						</div>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

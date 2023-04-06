@@ -1,0 +1,91 @@
+@font-face {
+	font-family: 'Shadows Into Light', cursive;
+	src: url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+}
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Shadows Into Light , cursive;
+}
+
+body {
+	background-color: #0093E9;
+	background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
+	height: auto;
+}
+
+
+.title{
+	text-align: center;
+	padding: 10px;
+	position: relative;
+}
+
+.title:after{
+	position: absolute;
+	content: "";
+	background-color: #03131d;
+	width: 300px;
+	height: 5px;
+	top: 60px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+}
+
+
+.main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: fixed;
+	background: rgba(81, 196, 125, 0.4);
+	padding: 25px;
+	border-radius: 15px;
+	box-shadow: 0 0 15px;
+}
+
+.main h2 {
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}
+
+.calculator{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.button {
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+	margin-left: 5px;
+	cursor: pointer;
+	border: none;
+	background: #3618e0;
+	color: white;
+	border-radius: 25px;
+	
+}
+
+.btn-green {
+	background:rgb(21, 146, 184);
+	color:#ffffff;
+}
+
+.textarea {
+	width: 204px;
+	margin: 4px;
+	font-size: 20px;
+	padding: 10px;
+	border: none;
+	color: #607d8b;
+	border-radius: 25px;
+	text-align: right;
+}
