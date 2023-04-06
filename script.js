@@ -4,8 +4,8 @@ function insert(num){
 
 // Sum Function
 function equal(){
-	var hasil = document.form.textarea.value;
-	document.form.textarea.value = eval(hasil);
+	const result = document.form.textarea.value;
+	document.form.textarea.value = eval(result);
 }
 
 // Clean number
@@ -15,6 +15,6 @@ function clean(){
 
 // Delete textarea
 function back(){
-	var hasil = document.form.textarea.value;
-	document.form.textarea.value = hasil.substring(0,hasil.length-1);
+	const result = document.form.textarea.value;
+	document.form.textarea.value = result.substring(0,result.length-1);
 }
